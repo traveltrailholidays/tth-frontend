@@ -1,0 +1,25 @@
+/.vscode
+/node_modules
+./dist
+
+*.env.local
+.env
+.env.local
+.env.*
+
+# Ignore build directories
+/.next
+/out
+
+# Ignore node_modules
+/node_modules
+
+# Ignore logs and temporary files
+/log
+/.tmp
+
+# Ignore static files
+/public
+
+# Ignore environment files
+.env*
