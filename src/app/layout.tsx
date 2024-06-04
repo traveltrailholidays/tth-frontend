@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
 
 import "@/stylesheets/globals.css";
 
-import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
 import ThemeDataProvider from "@/context/theme-data-provider";
+import ClientOnly from "@/components/util/ClientOnly";
+import Header from "@/components/Header/Header";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -39,7 +41,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ThemeDataProvider>{children}</ThemeDataProvider>
+          <ThemeDataProvider>
+            <ClientOnly>
+              <Header />
+            </ClientOnly>
+            {children}
+          </ThemeDataProvider>
         </NextThemesProvider>
       </body>
     </html>
