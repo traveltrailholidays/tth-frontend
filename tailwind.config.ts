@@ -17,6 +17,19 @@ const config = {
         "2xl": "1400px",
       },
     },
+    screens: {
+      '250': '250px',
+      '320': '320px',
+      '390': '390px',
+      'sm': '640px',
+      'md': '768px',
+      '850': '850px',
+      'lg': '1024px',
+      '1140':'1140px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      '1600':'1600px',
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -51,6 +64,21 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        custom: {
+          clp: '#FF5956',
+          txl: '#050505',
+          txd: '#E7E9ED',
+          sbl: '#F0F2F5',
+          sbd: '#18191A',
+          phl: '#F2F2F2',
+          phd: '#3A3B3C',
+          shl: '#E4E6E8',
+          shd: '#303031',
+          ibl: '#D8DADF',
+          ibd: '#4E4F50',
+          pbod: '#4B5563',
+          pbol: '#D1D5DB',
         },
       },
       borderRadius: {

@@ -1,10 +1,10 @@
+import HeroSection from "@/components/Home/HeroSection";
 
-import Header from "@/components/Header/Header";
 
 const page = () => {
   return (
     <>
-      <Header />
+      <HeroSection />
     </>
   )
 }
