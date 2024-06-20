@@ -27,7 +27,7 @@ const HeroSection = () => {
             Travel Beyond Boundaries.
           </h1>
           <h3 className="mt-5 mx-1 text-gray-500">
-            Discover the captivating beauty of India's most popular destination
+            Discover the captivating beauty of India&apos;s most popular destination
             with Travel Trail Holidays.
           </h3>
           <div className="mt-10 mx-1">
