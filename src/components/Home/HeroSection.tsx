@@ -16,7 +16,7 @@ const HeroSection = () => {
           relative"
       >
         <div
-          className="w-[20vw] h-[400px] bg-custom-clp/10 rounded-full absolute -z-10 bottom-0 left-0
+          className="w-[20vw] h-[400px] bg-custom-clp/10 rounded-full absolute -z-10 bottom-0 left-0 
             blur-[100px]"
         ></div>
         <div className="">
