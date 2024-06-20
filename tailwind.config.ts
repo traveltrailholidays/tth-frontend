@@ -17,6 +17,19 @@ const config = {
         "2xl": "1400px",
       },
     },
+    screens: {
+      '250': '250px',
+      '320': '320px',
+      '390': '390px',
+      'sm': '640px',
+      'md': '768px',
+      '850': '850px',
+      'lg': '1024px',
+      '1140':'1140px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      '1600':'1600px',
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -64,6 +77,8 @@ const config = {
           shd: '#303031',
           ibl: '#D8DADF',
           ibd: '#4E4F50',
+          pbod: '#4B5563',
+          pbol: '#D1D5DB',
         },
       },
       borderRadius: {

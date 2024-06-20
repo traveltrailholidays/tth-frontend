@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 
 interface NavLinkProps {
@@ -29,14 +30,14 @@ const ActiveLink: React.FC<NavLinkProps> = ({
   };
 
   return (
-    <div
-      onClick={handleActiveUrl}
+    <Link
+      href={href}
       className={`${className} ${isActive ? "!text-[#FF5956]" : "text-custom-txl"}
       dark:text-custom-txd hover:text-[#FF5956] hover:cursor-pointer
       dark:hover:text-[#FF5956]`}
     >
       {text}
-    </div>
+    </Link>
   );
 };
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import NextTopLoader from 'nextjs-toploader';
 
 import "@/stylesheets/globals.css";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.className}`}>
+        <NextTopLoader color="#FF5956" height={3} showSpinner={false}/>
         <NextThemesProvider
           attribute="class"
           defaultTheme="light"
